@@ -1,12 +1,11 @@
-Menus & Courses v8 — 20 novembre 2026
+MENUS & COURSES — VERSION 9
 
-Remplacer les 7 fichiers du dépôt GitHub Pages par ceux de ce ZIP.
-IMPORTANT : sauvegarder les données JSON avant mise à jour.
-Stockage conservé : menus_courses_v1.
+Déploiement : sauvegarder d’abord les données en JSON depuis la version actuelle.
+Remplacer les fichiers du dépôt GitHub Pages par ceux de cette archive.
+IMPORTANT : supprimer l’ancien fichier pdf-export.js du dépôt ; le générateur s’appelle désormais pdf-export.v9.js.
+Après publication, ouvrir le site avec ?v=9 pour actualiser l’interface et la PWA.
+Ne pas effacer les données du navigateur : la clé localStorage menus_courses_v1 reste inchangée.
 
-Nouveautés : quantités modifiables dans les courses, PDF courses compact (mise en page sur une page pour listes de taille raisonnable), copie texte, planning PDF plus compact, début de semaine configurable, catégories enrichies et tri alphabétique, recherche catalogue, ajout libre de produits.
+Améliorations : classement manuel des recettes par difficulté puis nom ; PDF des menus remanié et ordonné selon le jour de début configuré ; meilleure disposition mobile des actions ; nouveau générateur PDF versionné et actualisé ; réinitialisation des courses de la semaine en conservant les favoris.
 
-Les anciennes catégories Épicerie sont converties en Épicerie salée ; reclassez manuellement les produits sucrés.
-Les anciennes recettes, produits et menus restent dans le stockage du navigateur.
-La liste des produits manuels est historiquement globale (non liée à une semaine).
-Le PDF de courses peut devenir illisible si la liste est extrêmement longue : une page A4 physique impose une limite de place.
+Après réinitialisation, « Actualiser depuis les menus » rétablit les ingrédients et les ajouts précédemment masqués pour cette semaine.
