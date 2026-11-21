@@ -1,11 +1,11 @@
-MENUS & COURSES — VERSION 9
+MENUS & COURSES — VERSION 10
 
-Déploiement : sauvegarder d’abord les données en JSON depuis la version actuelle.
-Remplacer les fichiers du dépôt GitHub Pages par ceux de cette archive.
-IMPORTANT : supprimer l’ancien fichier pdf-export.js du dépôt ; le générateur s’appelle désormais pdf-export.v9.js.
-Après publication, ouvrir le site avec ?v=9 pour actualiser l’interface et la PWA.
-Ne pas effacer les données du navigateur : la clé localStorage menus_courses_v1 reste inchangée.
+Avant installation : exporter une sauvegarde JSON de l’application actuelle.
+Remplacer les fichiers du dépôt GitHub Pages par ceux du ZIP.
+Supprimer pdf-export.v9.js de l’ancien dépôt : le nouveau fichier est pdf-export.v10.js.
+Actualiser avec ?v=10 après déploiement. Ne pas effacer les données du site.
 
-Améliorations : classement manuel des recettes par difficulté puis nom ; PDF des menus remanié et ordonné selon le jour de début configuré ; meilleure disposition mobile des actions ; nouveau générateur PDF versionné et actualisé ; réinitialisation des courses de la semaine en conservant les favoris.
+V10 : onglet Produits simplifié sur mobile (étoile, nom, quantité, bouton Modifier; changement de catégorie et suppression seulement dans Modifier); formulaire Ajouter repliable. Onglet Courses compact avec cases à cocher et boutons −/+; à zéro, le produit disparaît de la liste courante, même s’il est favori dans le catalogue. Les quantités modifiées sont conservées dans les données locales et les exports.
 
-Après réinitialisation, « Actualiser depuis les menus » rétablit les ingrédients et les ajouts précédemment masqués pour cette semaine.
+Les incréments sont de 50 g/ml, 0,5 kg/L, ou 1 pour les autres unités.
+La clé de stockage reste menus_courses_v1.
