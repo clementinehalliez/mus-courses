@@ -1,11 +1,13 @@
-MENUS & COURSES — VERSION 10
+Menus & Courses — Mise à jour V11
 
-Avant installation : exporter une sauvegarde JSON de l’application actuelle.
-Remplacer les fichiers du dépôt GitHub Pages par ceux du ZIP.
-Supprimer pdf-export.v9.js de l’ancien dépôt : le nouveau fichier est pdf-export.v10.js.
-Actualiser avec ?v=10 après déploiement. Ne pas effacer les données du site.
+Nouveautés :
+1. Bouton + dans le catalogue Produits pour ajouter directement aux courses.
+2. Plat exceptionnel dans chaque créneau du planning, sans créer de recette en bibliothèque.
+3. PDF de courses A4 portrait, deux colonnes, avec catégories et cases à cocher.
+4. Onglet Recettes : recherche insensible aux accents et tri par difficulté puis alphabétique.
 
-V10 : onglet Produits simplifié sur mobile (étoile, nom, quantité, bouton Modifier; changement de catégorie et suppression seulement dans Modifier); formulaire Ajouter repliable. Onglet Courses compact avec cases à cocher et boutons −/+; à zéro, le produit disparaît de la liste courante, même s’il est favori dans le catalogue. Les quantités modifiées sont conservées dans les données locales et les exports.
+Installation : sauvegarder les données JSON depuis l'application, puis remplacer les fichiers du dépôt GitHub Pages par les 7 fichiers du ZIP. Supprimer l'ancien pdf-export.v10.js du dépôt, remplacé par pdf-export.v11.js. Après publication, ouvrir le site avec ?v=11 pour forcer le rafraîchissement.
 
-Les incréments sont de 50 g/ml, 0,5 kg/L, ou 1 pour les autres unités.
-La clé de stockage reste menus_courses_v1.
+Données : la clé localStorage menus_courses_v1 est conservée. Les plats exceptionnels sont stockés uniquement dans le planning de la semaine sous la forme d'une valeur préfixée et n'ajoutent pas d'ingrédients aux courses.
+
+Tests : syntaxe JavaScript et intégrité de l'archive vérifiées. Tester les parcours dans Chrome/PWA avant suppression de la sauvegarde JSON.

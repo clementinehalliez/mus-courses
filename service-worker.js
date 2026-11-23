@@ -1,5 +1,5 @@
-const CACHE='menus-courses-pwa-v10-20261120';
-const ASSETS=['./','./index.html','./pdf-export.v10.js','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
+const CACHE='menus-courses-pwa-v11-20261123';
+const ASSETS=['./','./index.html','./pdf-export.v11.js','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('menus-courses-pwa-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',e=>{
